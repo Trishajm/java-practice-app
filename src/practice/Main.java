@@ -4,6 +4,7 @@ import practice.arrays.LinearSearch;
 import practice.arrays.MinMax;
 import practice.arrays.Kadane;
 import practice.arrays.BinarySearch;
+import practice.arrays.EvenOdd;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
         System.out.println("2. Run Array program(MinMax)");
         System.out.println("3.Run Array program(Kadane)");
         System.out.println("4.Run Array program(BinarySearch)");
+        System.out.println("5. Run Array program(EvenOdd");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -38,6 +40,9 @@ public class Main {
                 else{
                     System.out.println("Element found at index " + result);
                 }
+                break;
+            case 5:
+                EvenOdd.run();
                 break;
             default:
                 System.out.println("Invalid choice");
