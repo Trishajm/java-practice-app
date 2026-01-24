@@ -5,6 +5,7 @@ import practice.arrays.MinMax;
 import practice.arrays.Kadane;
 import practice.arrays.BinarySearch;
 import practice.arrays.EvenOdd;
+import practice.arrays.SecondLargest;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +18,8 @@ public class Main {
         System.out.println("2. Run Array program(MinMax)");
         System.out.println("3.Run Array program(Kadane)");
         System.out.println("4.Run Array program(BinarySearch)");
-        System.out.println("5. Run Array program(EvenOdd");
+        System.out.println("5. Run Array program(EvenOdd)");
+        System.out.println("6. Run Array program(SecondLargest)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -43,6 +45,17 @@ public class Main {
                 break;
             case 5:
                 EvenOdd.run();
+                break;
+            case 6:
+                int second=SecondLargest.run();
+                if(second==-1)
+                {
+                    System.out.println("Second largest not found");
+                }
+                else
+                {
+                    System.out.println("Second largest element is "+ second);
+                }
                 break;
             default:
                 System.out.println("Invalid choice");
