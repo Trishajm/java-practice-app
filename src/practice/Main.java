@@ -6,6 +6,7 @@ import practice.arrays.Kadane;
 import practice.arrays.BinarySearch;
 import practice.arrays.EvenOdd;
 import practice.arrays.SecondLargest;
+import practice.Strings.ReverseString;
 import java.util.Scanner;
 
 public class Main {
@@ -20,6 +21,7 @@ public class Main {
         System.out.println("4.Run Array program(BinarySearch)");
         System.out.println("5. Run Array program(EvenOdd)");
         System.out.println("6. Run Array program(SecondLargest)");
+        System.out.println("7. Run String program(ReverseString)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -56,6 +58,9 @@ public class Main {
                 {
                     System.out.println("Second largest element is "+ second);
                 }
+                break;
+            case 7:
+                ReverseString.run();
                 break;
             default:
                 System.out.println("Invalid choice");
