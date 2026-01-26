@@ -7,6 +7,7 @@ import practice.arrays.BinarySearch;
 import practice.arrays.EvenOdd;
 import practice.arrays.SecondLargest;
 import practice.Strings.ReverseString;
+import practice.loops.SumOfDigits;
 import java.util.Scanner;
 
 public class Main {
@@ -22,6 +23,7 @@ public class Main {
         System.out.println("5. Run Array program(EvenOdd)");
         System.out.println("6. Run Array program(SecondLargest)");
         System.out.println("7. Run String program(ReverseString)");
+        System.out.println("8. Run loops program(SumOfDigits)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -61,6 +63,9 @@ public class Main {
                 break;
             case 7:
                 ReverseString.run();
+                break;
+            case 8:
+                SumOfDigits.run();
                 break;
             default:
                 System.out.println("Invalid choice");
