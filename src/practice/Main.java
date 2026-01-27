@@ -8,6 +8,7 @@ import practice.arrays.EvenOdd;
 import practice.arrays.SecondLargest;
 import practice.Strings.ReverseString;
 import practice.loops.SumOfDigits;
+import practice.loops.Palindrome;
 import java.util.Scanner;
 
 public class Main {
@@ -24,6 +25,7 @@ public class Main {
         System.out.println("6. Run Array program(SecondLargest)");
         System.out.println("7. Run String program(ReverseString)");
         System.out.println("8. Run loops program(SumOfDigits)");
+        System.out.println("9. Run loops program(Palindrome)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -66,6 +68,9 @@ public class Main {
                 break;
             case 8:
                 SumOfDigits.run();
+                break;
+            case 9:
+                Palindrome.run();
                 break;
             default:
                 System.out.println("Invalid choice");
