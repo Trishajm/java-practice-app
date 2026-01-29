@@ -10,6 +10,7 @@ import practice.Strings.ReverseString;
 import practice.loops.SumOfDigits;
 import practice.loops.Palindrome;
 import practice.loops.ArmstrongNumber;
+import practice.loops.CountDigits;
 import java.util.Scanner;
 
 public class Main {
@@ -28,6 +29,7 @@ public class Main {
         System.out.println("8. Run loops program(SumOfDigits)");
         System.out.println("9. Run loops program(Palindrome)");
         System.out.println("10. Run loops program(ArmstrongNumber)");
+        System.out.println("11. Run loops program(CountDigits)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -76,6 +78,9 @@ public class Main {
                 break;
             case 10:
                 ArmstrongNumber.run();
+                break;
+            case 11:
+                CountDigits.run();
                 break;
             default:
                 System.out.println("Invalid choice");
