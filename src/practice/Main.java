@@ -14,6 +14,7 @@ import practice.loops.CountDigits;
 import practice.loops.SwapNumbers;
 import practice.Strings.CountVowels;
 import practice.loops.FibonacciSeries;
+import practice.loops.FibonacciRecursive;
 import java.util.Scanner;
 
 public class Main {
@@ -36,6 +37,7 @@ public class Main {
         System.out.println("12. Run loops program(SwapNumbers)");
         System.out.println("13. Run Strings program(CountVowels)");
         System.out.println("14. Run loops program(FibonacciSeries)");
+        System.out.println("Run the loops program(FIbonacciRecursive)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -96,6 +98,9 @@ public class Main {
                 break;
             case 14:
                 FibonacciSeries.run();
+                break;
+            case 15:
+                FibonacciRecursive.run();
                 break;
             default:
                 System.out.println("Invalid choice");
