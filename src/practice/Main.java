@@ -15,6 +15,7 @@ import practice.loops.SwapNumbers;
 import practice.Strings.CountVowels;
 import practice.loops.FibonacciSeries;
 import practice.loops.FibonacciRecursive;
+import practice.loops.PrimeNumber;
 import java.util.Scanner;
 
 public class Main {
@@ -37,7 +38,8 @@ public class Main {
         System.out.println("12. Run loops program(SwapNumbers)");
         System.out.println("13. Run Strings program(CountVowels)");
         System.out.println("14. Run loops program(FibonacciSeries)");
-        System.out.println("Run the loops program(FIbonacciRecursive)");
+        System.out.println("15. Run the loops program(FIbonacciRecursive)");
+        System.out.println("16. Run the loops program(PrimeNumber)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -101,6 +103,9 @@ public class Main {
                 break;
             case 15:
                 FibonacciRecursive.run();
+                break;
+            case 16:
+                PrimeNumber.run();
                 break;
             default:
                 System.out.println("Invalid choice");
