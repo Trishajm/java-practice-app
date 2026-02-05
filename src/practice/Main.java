@@ -7,15 +7,9 @@ import practice.arrays.BinarySearch;
 import practice.arrays.EvenOdd;
 import practice.arrays.SecondLargest;
 import practice.Strings.ReverseString;
-import practice.loops.SumOfDigits;
-import practice.loops.Palindrome;
-import practice.loops.ArmstrongNumber;
-import practice.loops.CountDigits;
-import practice.loops.SwapNumbers;
+import practice.loops.*;
 import practice.Strings.CountVowels;
-import practice.loops.FibonacciSeries;
-import practice.loops.FibonacciRecursive;
-import practice.loops.PrimeNumber;
+import practice.loops.SumOfEvenNumbers;
 import java.util.Scanner;
 
 public class Main {
@@ -39,7 +33,8 @@ public class Main {
         System.out.println("13. Run Strings program(CountVowels)");
         System.out.println("14. Run loops program(FibonacciSeries)");
         System.out.println("15. Run the loops program(FIbonacciRecursive)");
-        System.out.println("16. Run the loops program(PrimeNumber)");
+        System.out.println("16`. Run the loops program(PrimeNumber)");
+        System.out.println("17. Run the loops program(SumOfEvenNumbers)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -106,6 +101,9 @@ public class Main {
                 break;
             case 16:
                 PrimeNumber.run();
+                break;
+            case 17:
+                SumOfEvenNumbers.run();
                 break;
             default:
                 System.out.println("Invalid choice");
