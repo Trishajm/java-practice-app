@@ -10,6 +10,7 @@ import practice.Strings.ReverseString;
 import practice.loops.*;
 import practice.Strings.CountVowels;
 import practice.loops.SumOfEvenNumbers;
+import practice.conditionals.LargestOfThree;
 import java.util.Scanner;
 
 public class Main {
@@ -35,6 +36,7 @@ public class Main {
         System.out.println("15. Run the loops program(FIbonacciRecursive)");
         System.out.println("16`. Run the loops program(PrimeNumber)");
         System.out.println("17. Run the loops program(SumOfEvenNumbers)");
+        System.out.println("18. Run the conditionals program(LargestOfThree)");
         System.out.print("Enter your choice: ");
 
         int choice = sc.nextInt();
@@ -104,6 +106,9 @@ public class Main {
                 break;
             case 17:
                 SumOfEvenNumbers.run();
+                break;
+            case 18:
+                LargestOfThree.run();
                 break;
             default:
                 System.out.println("Invalid choice");
